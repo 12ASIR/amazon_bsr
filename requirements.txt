@@ -1,0 +1,20 @@
+# ============================================================
+#  AM BSR 每日监控 — Python 依赖（根级，供本地与 GitHub Actions 共用）
+#  安装：python -m pip install -r requirements.txt
+#         然后 playwright install chromium   （浏览器采集必需）
+#  说明：脚本内路径全部相对项目根，不含任何绝对路径，
+#        Windows 与 Linux(Ubuntu) 双端可直接运行。
+# ============================================================
+
+# 亚马逊前台浏览器渲染采集（--source browser，主用）
+playwright>=1.40,<2
+
+# 图表渲染（品牌份额时间序列 / 桑基图 / 价格-评论四象限）
+matplotlib>=3.7,<4
+
+# 前台轻量备源（--source html）与通用 HTTP 请求
+requests>=2.28,<3
+
+# 说明：sqlite3 / csv / json / argparse 等均为标准库，无需额外声明。
+# 说明：Linux 云端如需图表中文正常显示，需另装中文字体，
+#       例如 Debian/Ubuntu：sudo apt-get install -y fonts-noto-cjk

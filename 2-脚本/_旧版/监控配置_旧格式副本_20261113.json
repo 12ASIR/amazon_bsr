@@ -1,0 +1,8 @@
+{
+  "_说明": "本文件是 AM BSR 每日监控的配置。采集口径固定为亚马逊美国站（amazon.com）前台，delivery_zip 为配送邮编锁定值，仅 browser 数据源生效。",
+  "node": "15736621",
+  "marketplace": "US",
+  "top": 100,
+  "delivery_zip": "10001",
+  "keepa_api_key": ""
+}
