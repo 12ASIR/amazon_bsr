@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>竞品动态</title>
+<style>:root{--navy:#1F3864;--navy2:#2C4E85;--line:#DDE3EA;--bg:#EEF1F6;--ink:#202020;
+--muted:#6B7A90;--down:#1B6B32;--downbg:#E4F4E8;--up:#B00020;--upbg:#FDE3E4;
+--act:#9C6500;--actbg:#FFF4E0;--card:#fff;}
+*{box-sizing:border-box}
+body{margin:0;padding:22px 22px 48px;background:var(--bg);color:var(--ink);
+font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",system-ui,sans-serif;font-size:13.5px;}
+.wrap{max-width:1180px;margin:0 auto}
+a{color:var(--navy2);text-decoration:none}
+a:hover{text-decoration:underline}
+.top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+h1{font-size:20px;color:var(--navy);margin:0;letter-spacing:.5px}
+.badge{font-size:12px;color:#41556F;background:#fff;border:1px solid var(--line);
+border-radius:99px;padding:3px 11px}
+.sub{color:var(--muted);font-size:12.5px;margin:6px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 20px 18px;
+box-shadow:0 1px 3px rgba(31,56,100,.07);display:flex;flex-direction:column;gap:12px;
+transition:.15s;border-top:4px solid var(--navy)}
+.card:hover{box-shadow:0 6px 18px rgba(31,56,100,.13);transform:translateY(-2px)}
+.card h2{margin:0;font-size:16.5px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.7}
+.stat{display:flex;gap:18px;flex-wrap:wrap;margin:2px 0 2px}
+.stat div{display:flex;flex-direction:column;gap:2px}
+.stat b{font-size:21px;color:var(--navy);font-variant-numeric:tabular-nums;font-weight:700}
+.stat span{font-size:11.5px;color:var(--muted)}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:9px 18px;border-radius:6px;
+font-weight:600;font-size:13px;align-self:flex-start}
+.btn:hover{background:var(--navy2);text-decoration:none}
+.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--navy)}
+table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;
+border:1px solid var(--line);border-radius:8px;overflow:hidden;font-variant-numeric:tabular-nums}
+thead th{background:var(--navy);color:#fff;font-size:12px;font-weight:600;padding:9px 10px;
+text-align:left;white-space:nowrap}
+tbody td{padding:9px 10px;border-top:1px solid var(--line);vertical-align:middle}
+tbody tr:nth-child(even){background:#FAFBFD}
+tbody tr:hover{background:#F0F5FC}
+.mono{font-family:Consolas,"SF Mono",Menlo,monospace;font-size:12.5px;letter-spacing:.3px}
+.t{color:#3A4A60;font-size:12.5px;max-width:520px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:4px;margin:1px 3px 1px 0;
+background:var(--actbg);color:var(--act);font-weight:600;white-space:nowrap}
+.tag.down{background:var(--downbg);color:var(--down)}
+.tag.up{background:var(--upbg);color:var(--up)}
+.tag.none{background:#F0F2F5;color:#8A97A8;font-weight:400}
+.toolbar{display:flex;gap:10px;align-items:center;margin:0 0 14px;flex-wrap:wrap}
+.toolbar input{padding:8px 12px;border:1px solid #C9D4E3;border-radius:6px;font-size:13px;
+min-width:240px;outline:none}
+.toolbar input:focus{border-color:var(--navy2);box-shadow:0 0 0 2px #E4ECF8}
+.toolbar .count{margin-left:auto;color:var(--muted);font-size:12.5px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:14px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 16px 12px;
+box-shadow:0 1px 3px rgba(31,56,100,.06)}
+.ccard .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:10px}
+.ccard .brand{font-weight:700;color:var(--navy);font-size:14.5px}
+.ccard .meta{color:var(--muted);font-size:11.5px;margin-top:2px}
+.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0 10px}
+.kv div{background:#F7F9FC;border:1px solid #E8EDF4;border-radius:6px;padding:7px 8px}
+.kv b{display:block;font-size:14px;color:var(--navy);font-variant-numeric:tabular-nums}
+.kv span{font-size:11px;color:var(--muted)}
+.mini{width:100%;border:1px solid #E8EDF4;border-radius:6px;font-size:11.5px;overflow:hidden}
+.mini th{background:#F0F4FA;color:#41556F;font-weight:600;padding:5px 6px;text-align:center;font-size:11px}
+.mini td{padding:4px 6px;text-align:center;border-top:1px solid #EEF2F7;font-variant-numeric:tabular-nums}
+.note{background:#FFFDF5;border:1px solid #F0E4C0;border-left:4px solid #D9A922;border-radius:8px;
+padding:13px 16px;color:#5C4A18;font-size:12.5px;line-height:1.85;margin-top:22px}
+.note b{color:#7A5B00}
+footer{margin-top:26px;color:#93A0B2;font-size:12px;text-align:center}
+.empty{background:#fff;border:1px dashed #C9D4E3;border-radius:10px;padding:44px;text-align:center;
+color:var(--muted)}</style>
+</head>
+<body><div class="wrap">
+<div class="top"><h1>竞品动态</h1>
+<span class="badge">数据日期 2026-11-11</span></div>
+<div class="sub">监控 10 个竞品 · 今日有动作 3 个 ·
+<a href="index.html">← 返回导航</a></div>
+
+<div class="cgrid">
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">COMNOVA AUTOPART</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0GFDBPB2B" target="_blank" rel="noopener">B0GFDBPB2B</a>
+     · Ford Bronco</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag down">小类 ↑3 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$206.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>10</b><span>小类排名</span></div>
+    <div><b>13544</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$206.99</td><td></td><td>18</td><td>25.7%</td></tr><tr><td>11-06</td><td>$206.99</td><td></td><td>20</td><td>20.3%</td></tr><tr><td>11-07</td><td>$206.99</td><td></td><td>11</td><td>27.7%</td></tr><tr><td>11-08</td><td>$206.99</td><td></td><td>11</td><td>24.4%</td></tr><tr><td>11-09</td><td>$206.99</td><td></td><td>13</td><td>26.3%</td></tr><tr><td>11-10</td><td>$206.99</td><td></td><td>13</td><td>23.3%</td></tr><tr><td>11-11</td><td>$206.99</td><td></td><td>10</td><td>32.6%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    11-10 改标题
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">COMNOVA AUTOPART</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0GFCK5FHP" target="_blank" rel="noopener">B0GFCK5FHP</a>
+     · Jeep Wrangler JL</div></div>
+    <div style="text-align:right"><span class="tag">改标题</span><span class="tag down">小类 ↑2 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$206.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>11</b><span>小类排名</span></div>
+    <div><b>13548</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$206.99</td><td></td><td>19</td><td>33.1%</td></tr><tr><td>11-06</td><td>$206.99</td><td></td><td>20</td><td>39.9%</td></tr><tr><td>11-07</td><td>$206.99</td><td></td><td>11</td><td>24.5%</td></tr><tr><td>11-08</td><td>$206.99</td><td></td><td>9</td><td>24.6%</td></tr><tr><td>11-09</td><td>$206.99</td><td></td><td>11</td><td>27.1%</td></tr><tr><td>11-10</td><td>$206.99</td><td></td><td>13</td><td>18.9%</td></tr><tr><td>11-11</td><td>$206.99</td><td></td><td>11</td><td>29.2%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    11-11 改标题
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">AutoBull</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0CW3P5ZHP" target="_blank" rel="noopener">B0CW3P5ZHP</a>
+     · Jeep Wrangler JL</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag up">小类 ↓3 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$199.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>12</b><span>小类排名</span></div>
+    <div><b>11783</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$209.99</td><td></td><td>35</td><td>23.8%</td></tr><tr><td>11-06</td><td>$199.99</td><td></td><td>8</td><td>18.3%</td></tr><tr><td>11-07</td><td>$199.99</td><td></td><td>12</td><td>11.5%</td></tr><tr><td>11-08</td><td>$199.99</td><td></td><td>13</td><td>19.8%</td></tr><tr><td>11-09</td><td>$199.99</td><td></td><td>9</td><td>19.1%</td></tr><tr><td>11-10</td><td>$199.99</td><td></td><td>9</td><td>12.7%</td></tr><tr><td>11-11</td><td>$199.99</td><td></td><td>12</td><td>11.8%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    价格 209.99 → 199.99（-10.0）
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">AutoBull</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0CW3PDQ12" target="_blank" rel="noopener">B0CW3PDQ12</a>
+     · Jeep Wrangler JK</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag up">小类 ↓5 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$199.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>12</b><span>小类排名</span></div>
+    <div><b>11784</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$199.99</td><td></td><td>35</td><td>10.2%</td></tr><tr><td>11-06</td><td>$199.99</td><td></td><td>9</td><td>7.5%</td></tr><tr><td>11-07</td><td>$199.99</td><td></td><td>8</td><td>4.7%</td></tr><tr><td>11-08</td><td>$199.99</td><td></td><td>13</td><td>7.7%</td></tr><tr><td>11-09</td><td>$199.99</td><td></td><td>10</td><td>2.1%</td></tr><tr><td>11-10</td><td>$199.99</td><td></td><td>7</td><td>4.3%</td></tr><tr><td>11-11</td><td>$199.99</td><td></td><td>12</td><td>16.2%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    近 7 天无标记动作
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">Binary Star</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0DQL2418N" target="_blank" rel="noopener">B0DQL2418N</a>
+     · Jeep Gladiator JT</div></div>
+    <div style="text-align:right"><span class="tag">改标题</span><span class="tag">上券</span><span class="tag down">小类 ↑9 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$269.99</b><span>Buybox 价</span></div>
+    <div><b>$20.0</b><span>优惠券</span></div>
+    <div><b>22</b><span>小类排名</span></div>
+    <div><b>26170</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$269.99</td><td>$20.0</td><td>28</td><td>34.4%</td></tr><tr><td>11-06</td><td>$269.99</td><td>$20.0</td><td>29</td><td>58.2%</td></tr><tr><td>11-07</td><td>$269.99</td><td>$20.0</td><td>34</td><td>24.4%</td></tr><tr><td>11-08</td><td>$269.99</td><td>$20.0</td><td>33</td><td>58.1%</td></tr><tr><td>11-09</td><td>$269.99</td><td>$20.0</td><td>33</td><td>53.5%</td></tr><tr><td>11-10</td><td>$269.99</td><td>$20.0</td><td>31</td><td>48.9%</td></tr><tr><td>11-11</td><td>$269.99</td><td>$20.0</td><td>22</td><td>47.4%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    11-05 券 $20.0 · 11-06 新增广告活动 · 11-06 券 $20.0 · 11-07 券 $20.0 · 11-08 券 $20.0 · 11-09 新增广告活动
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">JOYTUTUS</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0G394B1PF" target="_blank" rel="noopener">B0G394B1PF</a>
+     · Jeep Wrangler JL</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag up">小类 ↓13 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$189.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>35</b><span>小类排名</span></div>
+    <div><b>27711</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$209.99</td><td></td><td>26</td><td>12.5%</td></tr><tr><td>11-06</td><td>$209.99</td><td></td><td>27</td><td>13.3%</td></tr><tr><td>11-07</td><td>$209.99</td><td></td><td>21</td><td>14.5%</td></tr><tr><td>11-08</td><td>$209.99</td><td></td><td>27</td><td>14.3%</td></tr><tr><td>11-09</td><td>$189.99</td><td></td><td>31</td><td>4.6%</td></tr><tr><td>11-10</td><td>$189.99</td><td></td><td>22</td><td>0%</td></tr><tr><td>11-11</td><td>$189.99</td><td></td><td>35</td><td>1.7%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    价格 209.99 → 189.99（-20.0）
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">JOYTUTUS</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0FHKG2642" target="_blank" rel="noopener">B0FHKG2642</a>
+     · Jeep Wrangler JL</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag up">小类 ↓8 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$208.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>43</b><span>小类排名</span></div>
+    <div><b>29031</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$208.99</td><td></td><td>44</td><td>2.8%</td></tr><tr><td>11-06</td><td>$208.99</td><td></td><td>42</td><td>2.8%</td></tr><tr><td>11-07</td><td>$208.99</td><td></td><td>34</td><td>2.0%</td></tr><tr><td>11-08</td><td>$208.99</td><td></td><td>28</td><td>2.4%</td></tr><tr><td>11-09</td><td>$208.99</td><td></td><td>34</td><td>2.7%</td></tr><tr><td>11-10</td><td>$208.99</td><td></td><td>35</td><td>1.7%</td></tr><tr><td>11-11</td><td>$208.99</td><td></td><td>43</td><td>0.6%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    近 7 天无标记动作
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">Binary Star</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0DFWLT782" target="_blank" rel="noopener">B0DFWLT782</a>
+     · Jeep Gladiator JT</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag down">小类 ↑18 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$188.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>53</b><span>小类排名</span></div>
+    <div><b>39600</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$188.99</td><td></td><td>59</td><td>0%</td></tr><tr><td>11-06</td><td>$188.99</td><td></td><td>83</td><td>1.8%</td></tr><tr><td>11-07</td><td>$188.99</td><td></td><td>76</td><td>0.3%</td></tr><tr><td>11-08</td><td>$188.99</td><td></td><td>61</td><td>0.7%</td></tr><tr><td>11-09</td><td>$188.99</td><td></td><td>96</td><td>3.1%</td></tr><tr><td>11-10</td><td>$188.99</td><td></td><td>71</td><td>2.8%</td></tr><tr><td>11-11</td><td>$188.99</td><td></td><td>53</td><td>0%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    11-09 新增广告活动
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">AOTOWO</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B0GNM69DTM" target="_blank" rel="noopener">B0GNM69DTM</a>
+     · Jeep Wrangler JL</div></div>
+    <div style="text-align:right"><span class="tag none">今日无动作</span><span class="tag down">小类 ↑3 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$168.99</b><span>Buybox 价</span></div>
+    <div><b>—</b><span>优惠券</span></div>
+    <div><b>92</b><span>小类排名</span></div>
+    <div><b>61881</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$168.99</td><td></td><td>206</td><td>0%</td></tr><tr><td>11-06</td><td>$168.99</td><td></td><td>177</td><td>0%</td></tr><tr><td>11-07</td><td>$168.99</td><td></td><td>139</td><td>0%</td></tr><tr><td>11-08</td><td>$168.99</td><td></td><td>110</td><td>0%</td></tr><tr><td>11-09</td><td>$168.99</td><td></td><td>107</td><td>0%</td></tr><tr><td>11-10</td><td>$168.99</td><td></td><td>95</td><td>0%</td></tr><tr><td>11-11</td><td>$168.99</td><td></td><td>92</td><td>0%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    近 7 天无标记动作
+  </div>
+</div>
+<div class="ccard">
+  <div class="hd">
+    <div><div class="brand">Snailfly</div>
+    <div class="meta"><a class="mono" href="https://www.amazon.com/dp/B09KH53PKK" target="_blank" rel="noopener">B09KH53PKK</a>
+     · Ford Bronco</div></div>
+    <div style="text-align:right"><span class="tag">上券</span><span class="tag up">小类 ↓45 位</span></div>
+  </div>
+  <div class="kv">
+    <div><b>$268.0</b><span>Buybox 价</span></div>
+    <div><b>$13.4</b><span>优惠券</span></div>
+    <div><b>119</b><span>小类排名</span></div>
+    <div><b>52171</b><span>大类排名</span></div>
+  </div>
+  <table class="mini">
+    <thead><tr><th>日期</th><th>BB价</th><th>券</th><th>小类</th><th>广告占比</th></tr></thead>
+    <tbody><tr><td>11-05</td><td>$268.0</td><td>$13.4</td><td>124</td><td>2.3%</td></tr><tr><td>11-06</td><td>$268.0</td><td>$13.4</td><td>154</td><td>0.9%</td></tr><tr><td>11-07</td><td>$268.0</td><td>$13.4</td><td>125</td><td>2.7%</td></tr><tr><td>11-08</td><td>$268.0</td><td>$13.4</td><td>113</td><td>2.6%</td></tr><tr><td>11-09</td><td>$268.0</td><td>$13.4</td><td>124</td><td>3.2%</td></tr><tr><td>11-10</td><td>$268.0</td><td></td><td>74</td><td>10.8%</td></tr><tr><td>11-11</td><td>$268.0</td><td>$13.4</td><td>119</td><td>8.2%</td></tr></tbody>
+  </table>
+  <div style="margin-top:9px;font-size:11.5px;color:#6B7A90;line-height:1.7">
+    11-05 券 $13.4 · 11-06 券 $13.4 · 11-07 券 $13.4 · 11-08 券 $13.4 · 11-09 券 $13.4 · 11-11 券 $13.4
+  </div>
+</div></div>
+
+<div class="note">
+<b>这些动作是怎么来的</b>：页面上的「改标题 / 改主图 / 新增广告活动 / 上秒杀 / 上券 / 调价」都不是推测，
+而是卖家精灵「流量时光机」源表里逐日自带标记位与数值直接读出来的，口径可复现。<br>
+<b>能不能证明是它靠某个动作进的榜</b>：只能做<b>信号关联</b>，不能做因果结论。榜单位次由销量驱动，
+而广告投放力度、报名秒杀等后台操作天然不可见；能观察到的是动作时间点与排名拐点是否重合。
+因此这里展示的是「动作 + 排名拐点」的并置证据，供你判断，不替你下结论。<br>
+<b>没被监控的新 ASIN</b>：卖家精灵只对监控名单里的 ASIN 导出，榜上其它新品目前只有前台快照（价格/评分/评论），
+看不出它做过什么。要覆盖，需把新进榜 ASIN 加进监控名单每日导出。
+</div>
+
+<footer>数据源：卖家精灵「流量时光机_流量变化」· 口径：美西时间 · 排名数值变小＝上升</footer>
+
+</div></body>
+</html>

@@ -48,6 +48,13 @@ amazon_bsr/                            仓库根 = 项目二根目录
 ├─ 1-数据源/                            项目二：SQLite 快照库（不入库，首次运行自建）
 ├─ 2-脚本/                              项目二：主脚本、配置、日志、_旧版归档
 ├─ 3-输出/                              项目二：全部产物（不入库，运行时生成）
+├─ 4-站点/                              站点生成器
+│   └─ build_site.py                    读两个项目的本地数据 → 生成三页静态站点
+├─ data/                                站点数据层（bsr.json / competitor.json）
+├─ index.html                           站点首页 = 导航页（GitHub Pages 入口）
+├─ bsr.html                             BSR 新增 ASIN 页
+├─ competitor.html                      竞品动态页（含动作归因说明）
+├─ dashboard.html                       原有完整看板（保留备查）
 ├─ .github/workflows/bsr-daily.yml      项目二：GitHub Actions 云端每日采集
 ├─ 启动.py                             项目二：一键启动入口
 ├─ requirements.txt                     项目二：根级依赖
@@ -55,6 +62,26 @@ amazon_bsr/                            仓库根 = 项目二根目录
 ├─ 测试报告_20261111.md                 项目二：历史测试记录
 └─ 部署计划_20261112.md                 项目二：内网看板部署草案（未执行）
 ```
+
+### 站点结构（三页）
+
+线上入口：<https://12asir.github.io/amazon_bsr/>
+
+| 页面 | 内容 | 数据来源 |
+| --- | --- | --- |
+| `index.html` 导航页 | 两张入口卡片 + 当日核心数字（新进榜数、榜内均价、监控竞品数、有动作数） | 汇总以下两页 |
+| `bsr.html` BSR 新增 ASIN | 只列当日**新进榜** ASIN：排名、ASIN、标题、品牌、价格、评分/评论，附亚马逊直链，支持关键词过滤 | `3-输出/新增名单/bsr_new_entrants_*.csv` + `3-输出/明细/<日期>/bsr_snapshot_*.csv` |
+| `competitor.html` 竞品动态 | 每个竞品一张卡：Buybox 价、优惠券、大小类排名、近 7 日逐日价/券/排名/广告占比，并标注当期动作 | `AM竞品数据-sif/1-数据源/<YYYYMMDD>/流量时光机_流量变化_*.xlsx` + `2-脚本/asin_map.csv` |
+
+重新生成站点（在本机两个源项目同级的副本目录内执行）：
+
+```bash
+cd 4-站点
+python build_site.py            # 默认读同级 AM BSR每日监控 与 AM竞品数据-sif
+python build_site.py --bsr "<BSR源路径>" --sif "<竞品源路径>" --out "<输出目录>"
+```
+
+> 关于「竞品动作能否解释进榜」：页面只做**信号关联**（动作时间点与排名拐点并置），不做因果结论。榜单位次由销量驱动，广告投放力度、活动报名等后台操作天然不可见；未被纳入监控名单的新 ASIN 只有前台快照，看不出其动作。
 
 ### 不提交的内容
 

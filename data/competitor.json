@@ -1,0 +1,1126 @@
+{
+ "latest_date": "2026-11-11",
+ "tracked": 10,
+ "action_count": 3,
+ "items": [
+  {
+   "asin": "B0GFDBPB2B",
+   "brand": "COMNOVA AUTOPART",
+   "model": "Ford Bronco",
+   "url": "https://www.amazon.com/dp/B0GFDBPB2B",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 10.0,
+    "main_bsr": 13544.0,
+    "sales30": 50.0,
+    "bb_price": 206.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.6,
+    "reviews": 185.0,
+    "sellers": 1.0,
+    "organic_pct": 0.30243561,
+    "sp_pct": 0.32560075,
+    "sp_rec_pct": 0.21200562,
+    "sb_pct": 0.15995803,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 13.0,
+    "main_bsr": 12416.0,
+    "sales30": 50.0,
+    "bb_price": 206.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": true,
+    "image_changed": false,
+    "rating": 4.6,
+    "reviews": 185.0,
+    "sellers": 1.0,
+    "organic_pct": 0.40659243,
+    "sp_pct": 0.23304425,
+    "sp_rec_pct": 0.16224309,
+    "sb_pct": 0.19812023,
+    "sbv_pct": null
+   },
+   "sub_delta": 3,
+   "events": [
+    {
+     "type": "title",
+     "dir": "act",
+     "text": "11-10 改标题"
+    }
+   ],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 206.99,
+     "c": null,
+     "s": 18,
+     "ad": 25.7
+    },
+    {
+     "d": "11-06",
+     "p": 206.99,
+     "c": null,
+     "s": 20,
+     "ad": 20.3
+    },
+    {
+     "d": "11-07",
+     "p": 206.99,
+     "c": null,
+     "s": 11,
+     "ad": 27.7
+    },
+    {
+     "d": "11-08",
+     "p": 206.99,
+     "c": null,
+     "s": 11,
+     "ad": 24.4
+    },
+    {
+     "d": "11-09",
+     "p": 206.99,
+     "c": null,
+     "s": 13,
+     "ad": 26.3
+    },
+    {
+     "d": "11-10",
+     "p": 206.99,
+     "c": null,
+     "s": 13,
+     "ad": 23.3
+    },
+    {
+     "d": "11-11",
+     "p": 206.99,
+     "c": null,
+     "s": 10,
+     "ad": 32.6
+    }
+   ]
+  },
+  {
+   "asin": "B0GFCK5FHP",
+   "brand": "COMNOVA AUTOPART",
+   "model": "Jeep Wrangler JL",
+   "url": "https://www.amazon.com/dp/B0GFCK5FHP",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 11.0,
+    "main_bsr": 13548.0,
+    "sales30": 50.0,
+    "bb_price": 206.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": true,
+    "image_changed": false,
+    "rating": 4.6,
+    "reviews": 185.0,
+    "sellers": 1.0,
+    "organic_pct": 0.26456998,
+    "sp_pct": 0.2920465,
+    "sp_rec_pct": 0.38156379,
+    "sb_pct": 0.06181973,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 13.0,
+    "main_bsr": 12399.0,
+    "sales30": 50.0,
+    "bb_price": 206.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.6,
+    "reviews": 185.0,
+    "sellers": 1.0,
+    "organic_pct": 0.1494895,
+    "sp_pct": 0.1886466,
+    "sp_rec_pct": 0.62193603,
+    "sb_pct": 0.03992787,
+    "sbv_pct": null
+   },
+   "sub_delta": 2,
+   "events": [
+    {
+     "type": "title",
+     "dir": "act",
+     "text": "11-11 改标题"
+    }
+   ],
+   "actions_today": [
+    "title"
+   ],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 206.99,
+     "c": null,
+     "s": 19,
+     "ad": 33.1
+    },
+    {
+     "d": "11-06",
+     "p": 206.99,
+     "c": null,
+     "s": 20,
+     "ad": 39.9
+    },
+    {
+     "d": "11-07",
+     "p": 206.99,
+     "c": null,
+     "s": 11,
+     "ad": 24.5
+    },
+    {
+     "d": "11-08",
+     "p": 206.99,
+     "c": null,
+     "s": 9,
+     "ad": 24.6
+    },
+    {
+     "d": "11-09",
+     "p": 206.99,
+     "c": null,
+     "s": 11,
+     "ad": 27.1
+    },
+    {
+     "d": "11-10",
+     "p": 206.99,
+     "c": null,
+     "s": 13,
+     "ad": 18.9
+    },
+    {
+     "d": "11-11",
+     "p": 206.99,
+     "c": null,
+     "s": 11,
+     "ad": 29.2
+    }
+   ]
+  },
+  {
+   "asin": "B0CW3P5ZHP",
+   "brand": "AutoBull",
+   "model": "Jeep Wrangler JL",
+   "url": "https://www.amazon.com/dp/B0CW3P5ZHP",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 12.0,
+    "main_bsr": 11783.0,
+    "sales30": 100.0,
+    "bb_price": 199.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 392.0,
+    "sellers": 2.0,
+    "organic_pct": 0.77639702,
+    "sp_pct": 0.11821926,
+    "sp_rec_pct": 0.10194609,
+    "sb_pct": null,
+    "sbv_pct": 0.00343763
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 9.0,
+    "main_bsr": 10730.0,
+    "sales30": 100.0,
+    "bb_price": 199.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 391.0,
+    "sellers": 2.0,
+    "organic_pct": 0.76936059,
+    "sp_pct": 0.12724212,
+    "sp_rec_pct": 0.090514,
+    "sb_pct": null,
+    "sbv_pct": 0.01288329
+   },
+   "sub_delta": -3,
+   "events": [
+    {
+     "type": "price",
+     "dir": "down",
+     "text": "价格 209.99 → 199.99（-10.0）"
+    }
+   ],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 209.99,
+     "c": null,
+     "s": 35,
+     "ad": 23.8
+    },
+    {
+     "d": "11-06",
+     "p": 199.99,
+     "c": null,
+     "s": 8,
+     "ad": 18.3
+    },
+    {
+     "d": "11-07",
+     "p": 199.99,
+     "c": null,
+     "s": 12,
+     "ad": 11.5
+    },
+    {
+     "d": "11-08",
+     "p": 199.99,
+     "c": null,
+     "s": 13,
+     "ad": 19.8
+    },
+    {
+     "d": "11-09",
+     "p": 199.99,
+     "c": null,
+     "s": 9,
+     "ad": 19.1
+    },
+    {
+     "d": "11-10",
+     "p": 199.99,
+     "c": null,
+     "s": 9,
+     "ad": 12.7
+    },
+    {
+     "d": "11-11",
+     "p": 199.99,
+     "c": null,
+     "s": 12,
+     "ad": 11.8
+    }
+   ]
+  },
+  {
+   "asin": "B0CW3PDQ12",
+   "brand": "AutoBull",
+   "model": "Jeep Wrangler JK",
+   "url": "https://www.amazon.com/dp/B0CW3PDQ12",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 12.0,
+    "main_bsr": 11784.0,
+    "sales30": 50.0,
+    "bb_price": 199.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 391.0,
+    "sellers": 1.0,
+    "organic_pct": 0.79562549,
+    "sp_pct": 0.16221961,
+    "sp_rec_pct": 0.0421549,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 7.0,
+    "main_bsr": 10722.0,
+    "sales30": 50.0,
+    "bb_price": 199.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 391.0,
+    "sellers": 1.0,
+    "organic_pct": 0.9042502,
+    "sp_pct": 0.04250873,
+    "sp_rec_pct": 0.05324107,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "sub_delta": -5,
+   "events": [],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 199.99,
+     "c": null,
+     "s": 35,
+     "ad": 10.2
+    },
+    {
+     "d": "11-06",
+     "p": 199.99,
+     "c": null,
+     "s": 9,
+     "ad": 7.5
+    },
+    {
+     "d": "11-07",
+     "p": 199.99,
+     "c": null,
+     "s": 8,
+     "ad": 4.7
+    },
+    {
+     "d": "11-08",
+     "p": 199.99,
+     "c": null,
+     "s": 13,
+     "ad": 7.7
+    },
+    {
+     "d": "11-09",
+     "p": 199.99,
+     "c": null,
+     "s": 10,
+     "ad": 2.1
+    },
+    {
+     "d": "11-10",
+     "p": 199.99,
+     "c": null,
+     "s": 7,
+     "ad": 4.3
+    },
+    {
+     "d": "11-11",
+     "p": 199.99,
+     "c": null,
+     "s": 12,
+     "ad": 16.2
+    }
+   ]
+  },
+  {
+   "asin": "B0DQL2418N",
+   "brand": "Binary Star",
+   "model": "Jeep Gladiator JT",
+   "url": "https://www.amazon.com/dp/B0DQL2418N",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 22.0,
+    "main_bsr": 26170.0,
+    "sales30": 100.0,
+    "bb_price": 269.99,
+    "ld_price": null,
+    "coupon": 20.0,
+    "new_campaign": false,
+    "title_changed": true,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 850.0,
+    "sellers": 1.0,
+    "organic_pct": 0.45807929,
+    "sp_pct": 0.47398299,
+    "sp_rec_pct": 0.00760137,
+    "sb_pct": 0.05240934,
+    "sbv_pct": 0.00792701
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 31.0,
+    "main_bsr": 23285.0,
+    "sales30": 100.0,
+    "bb_price": 269.99,
+    "ld_price": null,
+    "coupon": 20.0,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 850.0,
+    "sellers": 1.0,
+    "organic_pct": 0.43423103,
+    "sp_pct": 0.48860926,
+    "sp_rec_pct": 0.02478818,
+    "sb_pct": 0.04287356,
+    "sbv_pct": 0.00949798
+   },
+   "sub_delta": 9,
+   "events": [
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-05 券 $20.0"
+    },
+    {
+     "type": "ad",
+     "dir": "act",
+     "text": "11-06 新增广告活动"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-06 券 $20.0"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-07 券 $20.0"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-08 券 $20.0"
+    },
+    {
+     "type": "ad",
+     "dir": "act",
+     "text": "11-09 新增广告活动"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-09 券 $20.0"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-10 券 $20.0"
+    },
+    {
+     "type": "title",
+     "dir": "act",
+     "text": "11-11 改标题"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-11 券 $20.0"
+    }
+   ],
+   "actions_today": [
+    "title",
+    "coupon"
+   ],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 28,
+     "ad": 34.4
+    },
+    {
+     "d": "11-06",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 29,
+     "ad": 58.2
+    },
+    {
+     "d": "11-07",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 34,
+     "ad": 24.4
+    },
+    {
+     "d": "11-08",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 33,
+     "ad": 58.1
+    },
+    {
+     "d": "11-09",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 33,
+     "ad": 53.5
+    },
+    {
+     "d": "11-10",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 31,
+     "ad": 48.9
+    },
+    {
+     "d": "11-11",
+     "p": 269.99,
+     "c": 20.0,
+     "s": 22,
+     "ad": 47.4
+    }
+   ]
+  },
+  {
+   "asin": "B0G394B1PF",
+   "brand": "JOYTUTUS",
+   "model": "Jeep Wrangler JL",
+   "url": "https://www.amazon.com/dp/B0G394B1PF",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 35.0,
+    "main_bsr": 27711.0,
+    "sales30": 100.0,
+    "bb_price": 189.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.8,
+    "reviews": 53.0,
+    "sellers": 2.0,
+    "organic_pct": 0.9832406,
+    "sp_pct": 0.0167594,
+    "sp_rec_pct": null,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 22.0,
+    "main_bsr": 20257.0,
+    "sales30": 100.0,
+    "bb_price": 189.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.8,
+    "reviews": 53.0,
+    "sellers": 2.0,
+    "organic_pct": 1.0,
+    "sp_pct": null,
+    "sp_rec_pct": null,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "sub_delta": -13,
+   "events": [
+    {
+     "type": "price",
+     "dir": "down",
+     "text": "价格 209.99 → 189.99（-20.0）"
+    }
+   ],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 209.99,
+     "c": null,
+     "s": 26,
+     "ad": 12.5
+    },
+    {
+     "d": "11-06",
+     "p": 209.99,
+     "c": null,
+     "s": 27,
+     "ad": 13.3
+    },
+    {
+     "d": "11-07",
+     "p": 209.99,
+     "c": null,
+     "s": 21,
+     "ad": 14.5
+    },
+    {
+     "d": "11-08",
+     "p": 209.99,
+     "c": null,
+     "s": 27,
+     "ad": 14.3
+    },
+    {
+     "d": "11-09",
+     "p": 189.99,
+     "c": null,
+     "s": 31,
+     "ad": 4.6
+    },
+    {
+     "d": "11-10",
+     "p": 189.99,
+     "c": null,
+     "s": 22,
+     "ad": 0
+    },
+    {
+     "d": "11-11",
+     "p": 189.99,
+     "c": null,
+     "s": 35,
+     "ad": 1.7
+    }
+   ]
+  },
+  {
+   "asin": "B0FHKG2642",
+   "brand": "JOYTUTUS",
+   "model": "Jeep Wrangler JL",
+   "url": "https://www.amazon.com/dp/B0FHKG2642",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 43.0,
+    "main_bsr": 29031.0,
+    "sales30": 200.0,
+    "bb_price": 208.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.8,
+    "reviews": 118.0,
+    "sellers": 1.0,
+    "organic_pct": 0.98473375,
+    "sp_pct": 0.00622753,
+    "sp_rec_pct": 0.00800626,
+    "sb_pct": null,
+    "sbv_pct": 0.00103246
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 35.0,
+    "main_bsr": 25325.0,
+    "sales30": 200.0,
+    "bb_price": 208.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.8,
+    "reviews": 117.0,
+    "sellers": 1.0,
+    "organic_pct": 0.97625736,
+    "sp_pct": 0.01656116,
+    "sp_rec_pct": 0.00620983,
+    "sb_pct": null,
+    "sbv_pct": 0.00097165
+   },
+   "sub_delta": -8,
+   "events": [],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 208.99,
+     "c": null,
+     "s": 44,
+     "ad": 2.8
+    },
+    {
+     "d": "11-06",
+     "p": 208.99,
+     "c": null,
+     "s": 42,
+     "ad": 2.8
+    },
+    {
+     "d": "11-07",
+     "p": 208.99,
+     "c": null,
+     "s": 34,
+     "ad": 2.0
+    },
+    {
+     "d": "11-08",
+     "p": 208.99,
+     "c": null,
+     "s": 28,
+     "ad": 2.4
+    },
+    {
+     "d": "11-09",
+     "p": 208.99,
+     "c": null,
+     "s": 34,
+     "ad": 2.7
+    },
+    {
+     "d": "11-10",
+     "p": 208.99,
+     "c": null,
+     "s": 35,
+     "ad": 1.7
+    },
+    {
+     "d": "11-11",
+     "p": 208.99,
+     "c": null,
+     "s": 43,
+     "ad": 0.6
+    }
+   ]
+  },
+  {
+   "asin": "B0DFWLT782",
+   "brand": "Binary Star",
+   "model": "Jeep Gladiator JT",
+   "url": "https://www.amazon.com/dp/B0DFWLT782",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 53.0,
+    "main_bsr": 39600.0,
+    "sales30": 50.0,
+    "bb_price": 188.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 483.0,
+    "sellers": 1.0,
+    "organic_pct": 0.82503184,
+    "sp_pct": null,
+    "sp_rec_pct": 0.05932744,
+    "sb_pct": 0.10772582,
+    "sbv_pct": 0.0079149
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 71.0,
+    "main_bsr": 53660.0,
+    "sales30": 50.0,
+    "bb_price": 188.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.5,
+    "reviews": 483.0,
+    "sellers": 1.0,
+    "organic_pct": 0.72708916,
+    "sp_pct": 0.0280991,
+    "sp_rec_pct": 0.12253016,
+    "sb_pct": 0.11777187,
+    "sbv_pct": 0.0045097
+   },
+   "sub_delta": 18,
+   "events": [
+    {
+     "type": "ad",
+     "dir": "act",
+     "text": "11-09 新增广告活动"
+    }
+   ],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 188.99,
+     "c": null,
+     "s": 59,
+     "ad": 0
+    },
+    {
+     "d": "11-06",
+     "p": 188.99,
+     "c": null,
+     "s": 83,
+     "ad": 1.8
+    },
+    {
+     "d": "11-07",
+     "p": 188.99,
+     "c": null,
+     "s": 76,
+     "ad": 0.3
+    },
+    {
+     "d": "11-08",
+     "p": 188.99,
+     "c": null,
+     "s": 61,
+     "ad": 0.7
+    },
+    {
+     "d": "11-09",
+     "p": 188.99,
+     "c": null,
+     "s": 96,
+     "ad": 3.1
+    },
+    {
+     "d": "11-10",
+     "p": 188.99,
+     "c": null,
+     "s": 71,
+     "ad": 2.8
+    },
+    {
+     "d": "11-11",
+     "p": 188.99,
+     "c": null,
+     "s": 53,
+     "ad": 0
+    }
+   ]
+  },
+  {
+   "asin": "B0GNM69DTM",
+   "brand": "AOTOWO",
+   "model": "Jeep Wrangler JL",
+   "url": "https://www.amazon.com/dp/B0GNM69DTM",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 92.0,
+    "main_bsr": 61881.0,
+    "sales30": 50.0,
+    "bb_price": 168.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 5.0,
+    "reviews": 18.0,
+    "sellers": 1.0,
+    "organic_pct": 1.0,
+    "sp_pct": null,
+    "sp_rec_pct": null,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 95.0,
+    "main_bsr": 64245.0,
+    "sales30": 50.0,
+    "bb_price": 168.99,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 5.0,
+    "reviews": 17.0,
+    "sellers": 1.0,
+    "organic_pct": 1.0,
+    "sp_pct": null,
+    "sp_rec_pct": null,
+    "sb_pct": null,
+    "sbv_pct": null
+   },
+   "sub_delta": 3,
+   "events": [],
+   "actions_today": [],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 168.99,
+     "c": null,
+     "s": 206,
+     "ad": 0
+    },
+    {
+     "d": "11-06",
+     "p": 168.99,
+     "c": null,
+     "s": 177,
+     "ad": 0
+    },
+    {
+     "d": "11-07",
+     "p": 168.99,
+     "c": null,
+     "s": 139,
+     "ad": 0
+    },
+    {
+     "d": "11-08",
+     "p": 168.99,
+     "c": null,
+     "s": 110,
+     "ad": 0
+    },
+    {
+     "d": "11-09",
+     "p": 168.99,
+     "c": null,
+     "s": 107,
+     "ad": 0
+    },
+    {
+     "d": "11-10",
+     "p": 168.99,
+     "c": null,
+     "s": 95,
+     "ad": 0
+    },
+    {
+     "d": "11-11",
+     "p": 168.99,
+     "c": null,
+     "s": 92,
+     "ad": 0
+    }
+   ]
+  },
+  {
+   "asin": "B09KH53PKK",
+   "brand": "Snailfly",
+   "model": "Ford Bronco",
+   "url": "https://www.amazon.com/dp/B09KH53PKK",
+   "latest": {
+    "date": "2026-11-11",
+    "sub_bsr": 119.0,
+    "main_bsr": 52171.0,
+    "sales30": 50.0,
+    "bb_price": 268.0,
+    "ld_price": null,
+    "coupon": 13.4,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.2,
+    "reviews": 270.0,
+    "sellers": 1.0,
+    "organic_pct": 0.88412738,
+    "sp_pct": 0.08207315,
+    "sp_rec_pct": 0.02517782,
+    "sb_pct": 0.00862165,
+    "sbv_pct": null
+   },
+   "prev": {
+    "date": "2026-11-10",
+    "sub_bsr": 74.0,
+    "main_bsr": 74070.0,
+    "sales30": 50.0,
+    "bb_price": 268.0,
+    "ld_price": null,
+    "coupon": null,
+    "new_campaign": false,
+    "title_changed": false,
+    "image_changed": false,
+    "rating": 4.2,
+    "reviews": 270.0,
+    "sellers": 1.0,
+    "organic_pct": 0.86628302,
+    "sp_pct": 0.1076944,
+    "sp_rec_pct": 0.02085482,
+    "sb_pct": 0.00516776,
+    "sbv_pct": null
+   },
+   "sub_delta": -45,
+   "events": [
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-05 券 $13.4"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-06 券 $13.4"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-07 券 $13.4"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-08 券 $13.4"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-09 券 $13.4"
+    },
+    {
+     "type": "coupon",
+     "dir": "act",
+     "text": "11-11 券 $13.4"
+    }
+   ],
+   "actions_today": [
+    "coupon"
+   ],
+   "series": [
+    {
+     "d": "11-05",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 124,
+     "ad": 2.3
+    },
+    {
+     "d": "11-06",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 154,
+     "ad": 0.9
+    },
+    {
+     "d": "11-07",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 125,
+     "ad": 2.7
+    },
+    {
+     "d": "11-08",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 113,
+     "ad": 2.6
+    },
+    {
+     "d": "11-09",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 124,
+     "ad": 3.2
+    },
+    {
+     "d": "11-10",
+     "p": 268.0,
+     "c": null,
+     "s": 74,
+     "ad": 10.8
+    },
+    {
+     "d": "11-11",
+     "p": 268.0,
+     "c": 13.4,
+     "s": 119,
+     "ad": 8.2
+    }
+   ]
+  }
+ ]
+}
